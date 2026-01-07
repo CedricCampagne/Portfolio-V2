@@ -98,9 +98,9 @@
     </p>
 
     <div class="hidden md:flex flex-row lg:flex lg:flex-col gap-3">
-      <a href="https://github.com/CedricCampagne" target="_blank" class="max-w-[150px] px-4 py-2 bg-slate-500 rounded hover:bg-blue-500 text-center">Mon GitHub</a>
-      <a href="https://www.linkedin.com/in/cédriccampagne" target="_blank" class="max-w-[150px] px-4 py-2 bg-slate-500 rounded hover:bg-blue-500 text-center">Mon Linkedin</a>
-      <a href="https://cedriccampagne.github.io/CV-interactif-V2/" target="_blank" class="max-w-[150px] px-4 py-2 bg-slate-500 rounded hover:bg-blue-500 text-center">Mon CV</a>
+      <a href="https://github.com/CedricCampagne" target="_blank" rel="noopener noreferrer" class="max-w-[150px] px-4 py-2 bg-slate-500 rounded hover:bg-blue-500 text-center">Mon GitHub</a>
+      <a href="https://www.linkedin.com/in/cédriccampagne" target="_blank" rel="noopener noreferrer" class="max-w-[150px] px-4 py-2 bg-slate-500 rounded hover:bg-blue-500 text-center">Mon Linkedin</a>
+      <a href="https://cedriccampagne.github.io/CV-interactif-V2/" target="_blank" rel="noopener noreferrer" class="max-w-[150px] px-4 py-2 bg-slate-500 rounded hover:bg-blue-500 text-center">Mon CV</a>
     </div>
   </div>
 </section>
