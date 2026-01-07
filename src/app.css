@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+/* Style global pour les champs de formulaire */
+input,
+textarea,
+select {
+  @apply bg-white text-black w-full px-3 py-2 rounded-md border border-slate-300
+         focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500;
+}
+
+/* Style des champs invalides */
+input:invalid,
+textarea:invalid {
+  @apply border-red-500 ring-1 ring-red-400;
+}
+
+/* Style personnalisé que tu avais */
+.was-validated {
+  @apply border-red-600 ring-2 ring-red-400 ring-offset-2;
+}
