@@ -2,7 +2,7 @@ name: Deploy SvelteKit to GitHub Pages
 
 on:
   push:
-    branches: [dev]   # tu testes sur dev
+    branches: [main]
 
 jobs:
   build:
@@ -37,7 +37,7 @@ jobs:
     environment: 
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-      
+
     steps:
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
