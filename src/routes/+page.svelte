@@ -56,13 +56,13 @@
 
 <!-- Liens réseaux (mobile) -->
 <section class="w-fit mx-auto md:hidden">
-  <a href="https://github.com/CedricCampagne" target="_blank">
+  <a href="https://github.com/CedricCampagne" target="_blank" rel="noopener noreferrer">
     <iconify-icon icon="mdi:github" class="text-4xl text-slate-300 hover:text-white"></iconify-icon>
   </a>
-  <a href="https://www.linkedin.com/in/cédriccampagne" target="_blank">
+  <a href="https://www.linkedin.com/in/c%C3%A9driccampagne/" target="_blank" rel="noopener noreferrer">
     <iconify-icon icon="mdi:linkedin" class="text-4xl text-slate-300 hover:text-white"></iconify-icon>
   </a>
-  <a href="https://cedriccampagne.github.io/CV-interactif-V2/" target="_blank">
+  <a href="https://cedriccampagne.github.io/CV-interactif-V2/" target="_blank" rel="noopener noreferrer">
     <iconify-icon icon="tabler:file-cv-filled" class="text-4xl text-slate-300 hover:text-white"></iconify-icon>
   </a>
 </section>
