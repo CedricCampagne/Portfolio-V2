@@ -4,7 +4,7 @@ name: Deploy SvelteKit to GitHub Pages
 # Le workflow se lance automatiquement quand tu pushes sur la branche main.
 on:
   push:
-    branches: [main]
+    branches: [dev]
 
 jobs:
   build:
