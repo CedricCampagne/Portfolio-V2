@@ -1,4 +1,6 @@
 <script>
+    import { base } from '$app/paths';
+
     export let title;
     export let description;
     export let image;
@@ -10,7 +12,7 @@
 <article class="flex flex-col md:h-[500px] md:flex-row overflow-hidden bg-slate-600 text-slate-200 shadow-2xl/80 rounded-xl border-t-2">
     <!-- Zone image-->
     <div class="hidden md:block md:h-full md:w-1/3 bg-slate-700">
-        <img src={image} alt="Photo" class="w-full h-full md:object-contain border-r-2 p-2">
+        <img src="{base}{image}" alt="Photo" class="w-full h-full md:object-contain border-r-2 p-2">
     </div>
     <!-- Zone texte-->
     <div class="w-full md:w-2/3 flex flex-col justify-between">
@@ -42,10 +44,3 @@
         </div>
     </div>
 </article>
-
-
-
-
-
-
-
