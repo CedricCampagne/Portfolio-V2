@@ -4,6 +4,7 @@
   import ProjectCard from '$lib/components/ProjectCard.svelte';
   import { skills } from '$lib/data/skills.js';
   import SkillCard from '$lib/components/SkillCard.svelte';
+	import { base } from '$app/paths';
 
   let showButton = false;
   let success = false;
@@ -80,7 +81,7 @@
 <section class="flex flex-col my-6 p-2 sm:flex sm:flex-row sm:justify-around sm:p-8 shadow-xl sm:border-t-2 sm:h-[70vh] mb-10">
   <div class="flex flex-col justify-center items-center p-2 md:justify-center xl:flex xl:flex-col xl:flex-1 xl:justify-around xl:items-center">
     <img
-      src="/images/cv_photo.jpeg"
+      src="{base}/images/cv_photo.jpeg"
       alt="Photo de profile"
       class="w-56 h-56 mx-auto rounded-full border-4 border-slate-300 shadow-lg object-cover hidden xl:block"
     />
