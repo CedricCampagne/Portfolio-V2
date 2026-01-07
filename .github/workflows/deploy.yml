@@ -1,42 +1,33 @@
-# Nom du workflow (visible dans l’onglet Actions).
 name: Deploy SvelteKit to GitHub Pages
 
-# Le workflow se lance automatiquement quand tu pushes sur la branche main.
 on:
   push:
-    branches: [dev]
+    branches: [dev]   # tu testes sur dev
 
 jobs:
   build:
-    # GitHub va utiliser une machine Linux pour exécuter les commandes.
     runs-on: ubuntu-latest
 
     steps:
-      # Télécharge ton code depuis GitHub.
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - name: Setup Node
-        # nstalle Node.js (version 18).
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: 18
 
       - name: Install dependencies
-        # Installe les dépendances de ton projet.
         run: npm install
 
       - name: Build
-        # Compile ton site SvelteKit → crée le dossier build/.
         run: npm run build
 
       - name: Upload artifact
-        # Enregistre le dossier build/ pour le job suivant.
-        uses: actions/upload-pages-artifact@v2
+        uses: actions/upload-pages-artifact@v3
         with:
           path: build
 
   deploy:
-    # Ce job attend que le build soit terminé.
     needs: build
     runs-on: ubuntu-latest
     permissions:
@@ -45,5 +36,4 @@ jobs:
 
     steps:
       - name: Deploy to GitHub Pages
-        # Déploie le dossier build/ sur GitHub Pages.
-        uses: actions/deploy-pages@v2
+        uses: actions/deploy-pages@v4
